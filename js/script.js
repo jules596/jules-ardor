@@ -8,15 +8,15 @@ document.querySelector('#nav-close').onclick = () =>{
     navbar.classList.remove('active');
 }
 
-let searchForm = document.querySelector('.search-form');
+// let searchForm = document.querySelector('.search-form');
 
-document.querySelector('#search-btn').onclick = () =>{
-    searchForm.classList.add('active');
-}
+// document.querySelector('#search-btn').onclick = () =>{
+//     searchForm.classList.add('active');
+// }
 
-document.querySelector('#close-search').onclick = () =>{
-    searchForm.classList.remove('active');
-}
+// document.querySelector('#close-search').onclick = () =>{
+//     searchForm.classList.remove('active');
+// }
 
 window.onscroll = () =>{
     navbar.classList.remove('active');
@@ -112,22 +112,22 @@ var swiper = new Swiper(".blogs-slider", {
     },
 });
 
-var swiper = new Swiper(".clients-slider", {
-    loop:true, 
-    grabCursor:true,
-    spaceBetween: 20,
-    breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        640: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
-    },
-});
+// var swiper = new Swiper(".clients-slider", {
+//     loop:true, 
+//     grabCursor:true,
+//     spaceBetween: 20,
+//     breakpoints: {
+//         0: {
+//           slidesPerView: 1,
+//         },
+//         640: {
+//           slidesPerView: 2,
+//         },
+//         768: {
+//           slidesPerView: 3,
+//         },
+//         1024: {
+//           slidesPerView: 4,
+//         },
+//     },
+// });
