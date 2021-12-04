@@ -124,7 +124,6 @@ div.text p:last-of-type {
 }
 
 .footer {
-    /* font-size: 62.5%; */
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/beach-front.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -188,5 +187,15 @@ div.text p:last-of-type {
 @media (max-width: 780px) {
     main {
         flex-direction: column;
+    }
+
+    main div img {
+        max-width: 35%;
+    }
+
+    .footer {
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/beach-front.jpeg) no-repeat;
+        background-size: cover;
+        background-position: top center;
     }
 }
