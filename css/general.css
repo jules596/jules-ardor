@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans+Condensed:wght@700&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif; 
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    -webkit-box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+body {
+    background-color:  #eee;
+    color: #000;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #10221b;
+}
+  
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;   
+  align-items: center;
+  background-color: #fff; 
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);      
+}
+  
+.header .logo {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    margin-right: auto;
+    font-size: 1.2rem;
+    color: #10221b;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+.header .icons a:hover, .header span {
+   font-family: 'Zen Kaku Gothic Antique', sans-serif;
+   color: #219150;
+}
+
+  
+.header .icons a {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: #10221b;
+    text-decoration: none;
+}
+
+.header .icons div:hover {
+    color: #219150;
+}
+
+.header:active {
+  padding: 1.5rem;
+}
+
+.top  {
+  font-family: 'Open Sans Condensed', sans-serif;
+  display: inline-flex;
+  width: 80%;
+  font-size: 10px;
+  margin-top: 50px;
+}
+
+section h1, section p {
+  width: 70%;
+}
+
+section h1 {
+    font-family: 'Zen Kaku Gothic Antique';
+    font-size: 2.5rem;
+    padding: 20px 0 30px ;
+    text-align: center;
+}
+
+section p {
+   font-family: 'Poppins';
+    padding: 20px 0;
+    line-height: 30px;
+    word-spacing: 2px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+section p span:hover {
+    cursor: pointer;
+    color: green;
+ } 
+ 
+section img {
+    padding: 0 auto;
+    height: 40%;
+    width: 40%;
+    object-position: top center;
+    margin-bottom: 20px;
+}
+
+section video {
+  object-position: bottom center;
+  object-fit: fill;
+  max-height: 500px;
+  width: 50%;
+}
+
+section p span a {
+  color: #219150;
+  font-style: italic;
+}
+
+section {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    margin: 50px auto 0px;
+}
+
+section .heart, section .heart #heart-btn {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #219150;
+  font-size: 1rem;
+  text-align: center;
+}
+
+section .heart span {
+   margin-right: 5px;
+}
+
+section .heart #heart {
+ background-color: rgb(83, 79, 79);
+}
+
+footer {
+  background-color: #10221b;
+  color: #fff;
+  text-align: center;
+  height: 100px;
+}
+
+footer div {
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+footer div a {
+  color: #fff;
+  padding-top: 20%;
+  padding: 20px 0 20px 0;
+}
+
+footer div a span {
+  color: #219150;
+}
+
+.click-me, .click-me a {
+  color: #219150;
+  padding: 20px 0;
+  cursor: pointer;
+}    
+
+.click-me:hover {
+  color: #10221b;
+  
+}
+
+.click-me:focus, .click-me:active {
+  transition: transform 0.5 ease-in;
+  transform: scale(.8);
+}
+
+.thumbnail {
+  background-color: #fff;
+  pointer-events: visible;
+  cursor: pointer;
+}
+
+.thumbnail:focus, .thumbnail:active {
+  background-color: #10221b;
+  outline: none;
+  border: none;
+  transition: transform scale(00.5rem) ease-in;
+  transform: scale(0.2);
+}
+
+
+@media (max-width: 1200px) {
+    .header {
+      padding: 2rem;
+    }
+    
+  }
+
+@media (max-width: 991px) {
+  html {
+    scroll-padding-top: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .navbar a {
+    margin: 1rem 0;
+    font-size: 3rem;
+  }
+  section {
+    max-width: 100%;
+    padding: 20px;
+    margin: 20px;
+  }
+  section h1, section p {
+    width: 80%;
+  }
+  section h1 {
+    font-size: 2rem;
+    padding: 15px 0 25px ;
+}
+  section img {
+      width: 100%;
+  }
+  section img {
+    padding: 0 auto;
+    height: 40%;
+    width: 80%;
+    object-position: top center;
+    margin-bottom: 20px;
+}
+
+section video {
+  object-position: bottom center;
+  object-fit: fill;
+  width: 100%;
+}
+}    
+
+@media (max-width: 450px) {
+  .heading {
+    font-size: 2rem;
+  }
+  section h1 {
+    font-size: 1.5rem;
+    padding: 10px 0 20px ;
+}
+}
+  
+  
