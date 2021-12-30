@@ -8,6 +8,8 @@
     font-family: 'Abel', sans-serif;
     font-family: 'Open Sans Condensed', sans-serif; 
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70%;
 }
 
 html {
@@ -44,10 +46,10 @@ body {
     align-items: center;
 }
   
-.header .logo {
+.header .logo, .header span  {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
     margin-right: auto;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #10221b;
     font-weight: bolder;
     text-decoration: none;
@@ -60,7 +62,7 @@ body {
 
   
 .header .icons a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-left: 2rem;
     cursor: pointer;
     color: #10221b;
@@ -71,48 +73,49 @@ body {
     color: #219150;
 }
 
-main {
+/* main {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0px 20px 40px 0px;
-}
+} */
 
-main .img {
-    padding: 0;
-    margin: 0;
-}
-main div img {
-    height: 50%;
+/* main div img {
+    max-height: 50%;
     max-width: 50%;
     border-radius: 50%;
     overflow: hidden;
-}
+} */
 
-main .details {
-    margin-right: 20px;
-}
+/* main, .text {
+    margin: 0px 30px;
+} */
+
 
 main .details p {
+    font-size: 1.5rem;
     color: #219150;
     margin-bottom: 5px;
     font-style: italic;
 }
 
 main .details h4 {
-    font-size: 'Abel', sans-serif;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
     margin-bottom: 20px;
 }
 
 main .details h1 {
     font-family: 'Zen Kaku Gothic Antique';
+    font-size: 2.5rem;
     margin-bottom: 5px;
 }
 
 div.text p {
     font-family: 'Poppins';
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    max-width: 80%;
     padding: 10px 10px 0 10px;
     margin: 20px 20px 0 20px;
     margin-bottom: 0;
@@ -140,6 +143,7 @@ div.text p:last-of-type {
 }
 
 .footer .box-container .box h3 {
+    font-size: 1.5rem;
     font-family: 'Open Sans Condensed';
     text-transform: capitalize;
     padding: 1.5rem 0;
@@ -147,17 +151,15 @@ div.text p:last-of-type {
 }
 
 .footer .box-container .box a {
-    font-size: 5px;
     text-transform: capitalize;
     display: block;
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: #fff;
     padding: 1rem 0;
     text-decoration: none;
 }
 
 .footer .box-container .box a i {
-    font-size: 15px;
     color: #219150;
     padding-right: .5rem;
 }
@@ -175,7 +177,7 @@ div.text p:last-of-type {
     margin-top: 2.5rem;
     padding: 1rem;
     padding-top: 2.5rem;
-    font-size: 15px;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -185,12 +187,30 @@ div.text p:last-of-type {
 
 
 @media (max-width: 780px) {
-    main {
-        flex-direction: column;
+    .header .logo, .header span {
+        font-size: 1.5rem;
+    }
+
+    .header .icons a, .header .icons i {
+        font-size: 1.4rem;
     }
 
     main div img {
-        max-width: 35%;
+        max-height: 25%;
+        max-width: 25%;
+    }
+
+    
+    main .details p {
+        font-size: 1rem;
+    }
+    
+    main .details h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        flex-direction: column;
     }
 
     .footer {

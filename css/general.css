@@ -154,6 +154,11 @@ section {
     margin: 50px auto 0px;
 }
 
+.comment {
+  width: 80%;
+  margin: 50px auto 0px;
+}
+
 section .heart, section .heart #heart-btn {
   display: inline-flex;
   justify-content: space-between;
@@ -163,6 +168,26 @@ section .heart, section .heart #heart-btn {
   text-align: center;
 }
 
+section .cost {
+  margin-top: 100px;
+  padding-top: 100px;
+  padding: 20px 0;
+}
+
+section div .cost, section div .cost h3, section div .cost p, section div .details, section div .details h3, section div .details p  {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+section .details i, section .details p a {
+  color: #000;
+}
+
+section div .cost, section div .details {
+  margin-bottom: 30px;
+}
 section .heart span {
    margin-right: 5px;
 }
@@ -280,7 +305,10 @@ section video {
   section h1 {
     font-size: 1.5rem;
     padding: 10px 0 20px ;
-}
+  }
+  .comment {
+    margin: 30px 20px;
+  }
 }
   
   
